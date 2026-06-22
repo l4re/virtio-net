@@ -3,6 +3,9 @@
 [comment]: # (This is a generated file. Do not change it.)
 [comment]: # (Instead, change capdb.yml.)
 
+
+## Description {#l4re_servers_virtio_net_p2p_description}
+
 The virtual network point-to-point server (p2p) connects two clients with a
 virtual network connection. It uses virtio as the transport mechanism. Each
 virtual network p2p endpoint implements the device-side of a virtio network
@@ -10,7 +13,8 @@ device. Each client can access its endpoint using the driver-side semantics of a
 virtio network device.
 
 
-## Capabilities
+<hr>
+## Capabilities {#l4re_servers_virtio_net_p2p_capabilities}
 
 * `dataspace`
 
@@ -26,7 +30,8 @@ virtio network device.
   Mandatory capability.
 
 
-## Command Line Options
+<hr>
+## Command Line Options {#l4re_servers_virtio_net_p2p_cmdline_options}
 
 The following command line options are supported:
 
@@ -59,6 +64,7 @@ The following command line options are supported:
 
   Name of a provided capability that adheres to the dataspace protocol.
 
+<hr>
 ## Building and Configuration
 
 The virtual network p2p server can be built using the L4Re build system by
@@ -84,7 +90,7 @@ p2p server and a client to create new virtual ports. The server-side is assigned
 to the mandatory `svr` capability of the virtual network p2p server. See the
 section below on how to create a new virtual port and connect a client to it.
 
-## Virtual p2p port
+## Virtual p2p port {#l4re_servers_virtio_net_p2p_param_virtual_p2p_port}
 
 Prior to connecting a client to a virtual network p2p server port it has to be
 created using the following Lua function. It has to be called on the client side
@@ -121,7 +127,8 @@ the virtual network p2p server using the virtio network protocol.
 
 
 
-## Examples
+<hr>
+## Examples {#l4re_servers_virtio_net_p2p_examples}
 
 A couple of examples on how to create ports with different properties are listed
 below.
